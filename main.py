@@ -6,7 +6,8 @@ from config import \
 RED_LED_1, GRN_LED_1, BLU_LED_1, \
 RED_LED_2, GRN_LED_2, BLU_LED_2, \
 RED_LED_3, GRN_LED_3, BLU_LED_3, \
-RED_LED_4, GRN_LED_4, BLU_LED_4
+RED_LED_4, GRN_LED_4, BLU_LED_4, \
+FLICKER_INTERVAL
 
 # If you are using a common CATHODE use these values
 #leds = [
@@ -32,21 +33,17 @@ colors = {
     "red": (1, 0, 0),
     "red2": (1, 0, 0),
     "red3": (1, 0, 0),
-    "red4": (1, 0, 0)
 }
 
 
 def flicker_leds():
     while True:
-        # Select a random LED and color
         led = random.choice(leds)
         color = random.choice(list(colors.values()))
         
-        # Apply the color to the selected LED
         led.color = color
         
-        # Wait for 0.1 seconds before changing another LED
-        time.sleep(0.1)
+        time.sleep(FLICKER_INTERVAL)
 
 
 

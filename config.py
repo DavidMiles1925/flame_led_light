@@ -1,3 +1,5 @@
+FLICKER_INTERVAL = 0.05
+
 # LED Batch 1
 
 RED_LED_1 = 17
