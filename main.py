@@ -3,45 +3,39 @@ import time
 from gpiozero import RGBLED
 
 from config import \
-RED_LED_1, \
-GRN_LED_1, \
-BLU_LED_1, \
-RED_LED_2, \
-GRN_LED_2, \
-BLU_LED_2
+RED_LED_1, GRN_LED_1, BLU_LED_1, \
+RED_LED_2, GRN_LED_2, BLU_LED_2, \
+RED_LED_3, GRN_LED_3, BLU_LED_3, \
+RED_LED_4, GRN_LED_4, BLU_LED_4, \
+RED_LED_5, GRN_LED_5, BLU_LED_5, \
+RED_LED_6, GRN_LED_6, BLU_LED_6
 
 # If you are using a common CATHODE use these values
 #leds = [
-#    RGBLED(red=17, green=27, blue=22),  # LED 1
-#    RGBLED(red=5, green=6, blue=13),    # LED 2
-#    RGBLED(red=19, green=26, blue=16),   # LED 3
-#    RGBLED(red=12, green=20, blue=21),   # LED 4
-#    RGBLED(red=23, green=24, blue=25),   # LED 5
-#    RGBLED(red=18, green=4, blue=3)      # LED 6
+#    RGBLED(red=RED_LED_1, green=GRN_LED_1, blue=BLU_LED_1),  # LED 1
+#    RGBLED(red=RED_LED_2, green=GRN_LED_2, blue=BLU_LED_2),    # LED 2
+#    RGBLED(red=RED_LED_3, green=GRN_LED_3, blue=BLU_LED_3),  # LED 3
+#    RGBLED(red=RED_LED_4, green=GRN_LED_4, blue=BLU_LED_4),  # LED 4
+#    RGBLED(red=RED_LED_5, green=GRN_LED_5, blue=BLU_LED_5),  # LED 5
+#    RGBLED(red=RED_LED_6, green=GRN_LED_6, blue=BLU_LED_6)     # LED 6
 #]
 
-#colors = {
-#    "white": (1, 1, 1),
-#    "yellow": (1, 1, 0),
-#    "orange": (1, 0.5, 0),
-#    "red": (1, 0, 0)
-#}
 
 # If you are using a common ANODE use these values
 leds = [
-    RGBLED(red=RED_LED_1, green=GRN_LED_1, blue=BLU_LED_1, active_high=False),  # LED 1
-    RGBLED(red=RED_LED_2, green=GRN_LED_2, blue=BLU_LED_2, active_high=False),    # LED 2
-    #RGBLED(red=19, green=26, blue=16, active_high=False),  # LED 3
-    #RGBLED(red=12, green=20, blue=21, active_high=False),  # LED 4
-    #RGBLED(red=23, green=24, blue=25, active_high=False),  # LED 5
-    #RGBLED(red=18, green=4, blue=3, active_high=False)     # LED 6
+    RGBLED(red=RED_LED_1, green=GRN_LED_1, blue=BLU_LED_1, active_high=False),
+    RGBLED(red=RED_LED_2, green=GRN_LED_2, blue=BLU_LED_2, active_high=False),
+    RGBLED(red=RED_LED_3, green=GRN_LED_3, blue=BLU_LED_3, active_high=False),
+    RGBLED(red=RED_LED_4, green=GRN_LED_4, blue=BLU_LED_4, active_high=False),
+    RGBLED(red=RED_LED_5, green=GRN_LED_5, blue=BLU_LED_5, active_high=False),
+    RGBLED(red=RED_LED_6, green=GRN_LED_6, blue=BLU_LED_6, active_high=False)
 ]
 
 colors = {
-    "white": (0, 0, 0),
-    "yellow": (0, 0, 1),
-    "orange": (0, 0.5, 1),
-    "red": (0, 1, 1)
+    "white": (1, 1, 1),
+    "yellow": (1, 1, 0),
+    "orange": (1, 0.5, 0),
+    "red": (1, 0, 0)
 }
 
 
