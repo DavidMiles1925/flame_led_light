@@ -12,6 +12,6 @@ BLU_LED_2 = 13
 
 # LED Batch 3
 
-RED_LED_2 = 19
-GRN_LED_2 = 26
-BLU_LED_2 = 16
+RED_LED_3 = 19
+GRN_LED_3 = 26
+BLU_LED_3 = 16
