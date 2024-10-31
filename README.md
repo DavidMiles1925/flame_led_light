@@ -10,18 +10,13 @@ This is the code portion of a project I am doing for a 3D printing contest entry
 
 I will use the 5V rail on the RPi, and divide it into one parallel circuit for each LED to connect to the anode. I will run the RPi pins to the ground pins of each LED individually.
 
+**IMPORTANT:** The Rapsberry Pi comes with current limitations. Each GPIO pin should only carry a maximum of **16mA**, and the total GPIO should not carry a current greater than **50mA**. **USE THE CORRECT RESISTOR VALUES TO AVOID DAMAGE TO YOUR PI**
+
 **RGB LED Resistor Values:**
 
-Adjusted Values
-Red: 1220  
-Green: 690  
-Blue: 690
-
-Old:
-
-Red: 147
-Green: 100
-Blue: 100
+Red: 1220 Ohms  
+Green: 690 Ohms
+Blue: 690 Ohms
 
 ### Pin Out
 
@@ -39,9 +34,3 @@ Blue: 100
 | RED_LED_4 | 12  |
 | GRN_LED_4 | 20  |
 | BLU_LED_4 | 21  |
-| RED_LED_5 | 23  |
-| GRN_LED_5 | 24  |
-| BLU_LED_5 | 25  |
-| RED_LED_6 | 18  |
-| GRN_LED_6 | 4   |
-| BLU_LED_6 | 3   |
