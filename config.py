@@ -1,0 +1,17 @@
+# LED Batch 1
+
+RED_LED_1 = 17
+GRN_LED_1 = 27
+BLU_LED_1 = 22
+
+# LED Batch 2
+
+RED_LED_2 = 5
+GRN_LED_2 = 6
+BLU_LED_2 = 13
+
+# LED Batch 3
+
+RED_LED_2 = 19
+GRN_LED_2 = 26
+BLU_LED_2 = 16
