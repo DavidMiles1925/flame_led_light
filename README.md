@@ -12,6 +12,13 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 
 **RGB LED Resistor Values:**
 
+Adjusted Values
+Red: 1220  
+Green: 690  
+Blue: 690
+
+Old:
+
 Red: 147
 Green: 100
 Blue: 100

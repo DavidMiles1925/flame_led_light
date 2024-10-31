@@ -27,8 +27,8 @@ leds = [
     RGBLED(red=RED_LED_2, green=GRN_LED_2, blue=BLU_LED_2, active_high=False),
     RGBLED(red=RED_LED_3, green=GRN_LED_3, blue=BLU_LED_3, active_high=False),
     RGBLED(red=RED_LED_4, green=GRN_LED_4, blue=BLU_LED_4, active_high=False),
-    RGBLED(red=RED_LED_5, green=GRN_LED_5, blue=BLU_LED_5, active_high=False),
-    RGBLED(red=RED_LED_6, green=GRN_LED_6, blue=BLU_LED_6, active_high=False)
+    #RGBLED(red=RED_LED_5, green=GRN_LED_5, blue=BLU_LED_5, active_high=False),
+    #RGBLED(red=RED_LED_6, green=GRN_LED_6, blue=BLU_LED_6, active_high=False)
 ]
 
 colors = {
