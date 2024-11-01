@@ -73,12 +73,20 @@ Note, because I used a common ANODE LED I am running power from the 5V rail to t
 If you have never used a Raspberry Pi before, here are some resources I have created over the years that may be helpful for you.
 
 Link to:  
-GitHub  
-Youtube
+[My GitHub - Setting up a Raspberry Pi](https://github.com/DavidMiles1925/pi_zero_setup?tab=readme-ov-file#setting-up-raspberry-pi-zero)
+[My YouTube - Setting up a Raspberry Pi](https://youtu.be/PFzUDpfFmyg)
 
-### Downloading and Running the Code
+### Installing Git
 
-Link to Install Git
+Run this code from your terminal.
+
+```bash
+sudo apt install git
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+## Downloading and Running the Code
 
 **1. Clone the Repository**
 
@@ -96,11 +104,27 @@ If you use different pins than this tutorial specifies, you'll need to update th
 
 **3. Modify code if needed for common cathode**
 
-Remove (or comment out) lines 21-27 in main.py. Un-comment lines 13-18 of the code.
+Remove (or comment out) lines 21-27 in `main.py`. Un-comment lines 13-18 of the code.
 
 **4. Test the code**
 
+Navigate into the program's directory. From there, run the command:
+
+```bash
+sudo python main.py
+```
+
+Debug for your set up if necessary.
+
 **5. Set the program to run on startup**
+
+You'll need to edit your `rc.local` file on your Raspbery Pi. Add this line to the file before the `exit` code. Replace YOUR_PI_NAME with the name of your Pi.
+
+```bash
+sudo python /home/YOUR_PI_NAME/flame_led_light &
+```
+
+**DO NOT FORGET THE "&" AT THE END!**
 
 ## 3D Print
 
