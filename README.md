@@ -20,7 +20,7 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 
 **Total Current Through GPIO: ~30mA**
 
-![Resistors](./media/breadboard_with_labels_thumb.jpg)
+![Resistors](./media/breadboard_with_labels.jpg)
 
 ### Pin Out
 
@@ -39,6 +39,6 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 | GRN_LED_4 | 20  |
 | BLU_LED_4 | 21  |
 
-![Pinout](./media/pinout_pi_zero_thumb.png)
+![Pinout](./media/pinout_pi_zero.png)
 
-![Wired](./media/pi_wired_up_thumb.jpg)
+![Wired](./media/pi_wired_up.jpg)
