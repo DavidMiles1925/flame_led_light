@@ -1,18 +1,37 @@
-# Flame With Flickering LEDs
+# Dumpster Fire - Flame With Flickering LEDs
 
 ## Project Description
 
 This is the code portion of a project I am doing for a 3D printing contest entry. The code is meant to activate several RGB LEDs to create a flickering, flame-like effect.
 
-## Documentation
+## Supplies
 
-### Circuit Power
+### Supply List
+
+| Item                   | Qty | Link        |
+| ---------------------- | --- | ----------- |
+| 3D Print File          | 1   | Creality    |
+| Raspberry Pi           | 1   | Microcenter |
+| Solderless BreadBoard  | 1   | Amazon      |
+| Dupont M-F Cables      | 14  | Amazon      |
+| 220 Ohm Resistor       | 12  | Amazon      |
+| 470 Ohm Resistor       | 8   | Amazon      |
+| 1K Ohm Resistor        | 4   | Amazon      |
+| RGB LED (Common Anode) | 4   | Amazon      |
+
+### Choosing an LED - Common Cathode vs Common Anode
+
+You will find that there are two main types of RGB LEDs out there. The type you buy will affect the way the device needs to be wired and coded.
+
+**I used a common ANODE LED for this project.** I will make some notes later on regarding what changes to make if you are using a common cathode LED.
+
+## Circuit and Power
 
 I will use the 5V rail on the RPi, and divide it into one parallel circuit for each LED to connect to the anode. I will run the RPi pins to the ground pins of each LED individually.
 
 **IMPORTANT:** The Rapsberry Pi comes with current limitations. Each GPIO pin should only carry a maximum of **16mA**, and the total GPIO should not carry a current greater than **50mA**. **USE THE CORRECT RESISTOR VALUES TO AVOID DAMAGE TO YOUR PI**
 
-#### RGB LED Resistor Values:
+### RGB LED Resistor Values:
 
 **Red: 1220 Ohms** ((5V-2V)\1220 = 0.0025mA)  
 **Green: 690 Ohms** ((5V-3.2V)\690 = 0.0026mA)  
@@ -41,4 +60,32 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 
 ![Pinout](./media/pinout_pi_zero.png)
 
+Note, because I used a common ANODE LED I am running power from the 5V rail to the anode of the LED. If you were to use a common cathode, you would need to run the cathode to a ground pin on the Pi.
+
 ![Wired](./media/pi_wired_up.jpg)
+
+## Setting up the Raspberry Pi
+
+### Setup Instructions
+
+If you have never used a Raspberry Pi before, here are some resources I have created over the years that may be helpful for you.
+
+Link to:  
+GitHub  
+Youtube
+
+### Downloading the Code
+
+Link to Install Git
+
+### Working with the Code
+
+Clone Repo
+Set up config.py
+Modify code if needed for common cathode
+Test the code
+Set the program to run on startup
+
+## 3D Print
+
+Info to come
