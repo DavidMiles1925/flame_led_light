@@ -31,7 +31,7 @@ You will find that there are two main types of RGB LEDs out there. The type you 
 
 I will use the 5V rail on the RPi, and divide it into one parallel circuit for each LED to connect to the anode. I will run the RPi pins to the ground pins of each LED individually.
 
-**IMPORTANT:** The Rapsberry Pi comes with current limitations. Each GPIO pin should only carry a maximum of **16mA**, and the total GPIO should not carry a current greater than **50mA**. **USE THE CORRECT RESISTOR VALUES TO AVOID DAMAGE TO YOUR PI**
+**IMPORTANT: USE THE CORRECT RESISTOR VALUES TO AVOID DAMAGE TO YOUR PI!** The Rapsberry Pi comes with current limitations. Each GPIO pin should only carry a maximum of **16mA**, and the total GPIO should not carry a current greater than **50mA**.
 
 ### RGB LED Resistor Values:
 
