@@ -2,6 +2,8 @@
 
 ## Project Description
 
+![Flicker](./media/Flicker.gif)
+
 This is the code portion of a project I am doing for a 3D printing contest entry. The code is meant to activate several RGB LEDs to create a flickering, flame-like effect.
 
 ## Supplies
@@ -74,17 +76,31 @@ Link to:
 GitHub  
 Youtube
 
-### Downloading the Code
+### Downloading and Running the Code
 
 Link to Install Git
 
-### Working with the Code
+**1. Clone the Repository**
 
-Clone Repo
-Set up config.py
-Modify code if needed for common cathode
-Test the code
-Set the program to run on startup
+Run this command from your home folder to clone the repository:
+
+```bash
+git clone https://github.com/DavidMiles1925/flame_led_light.git
+```
+
+**2. Set up `config.py`**
+
+Adjust `FLICKER TIME` to set the time (in seconds) between light changes. The default is 0.05 seconds.
+
+If you use different pins than this tutorial specifies, you'll need to update the pin numbers in `config.py`.
+
+**3. Modify code if needed for common cathode**
+
+Remove (or comment out) lines 21-27 in main.py. Un-comment lines 13-18 of the code.
+
+**4. Test the code**
+
+**5. Set the program to run on startup**
 
 ## 3D Print
 
