@@ -43,6 +43,8 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 
 ![Resistors](./media/breadboard_with_labels.jpg)
 
+![Pinout](./media/pinout_pi_zero.png)
+
 ### Pin Out
 
 | LED Name  | Pin |
@@ -59,8 +61,6 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 | RED_LED_4 | 12  |
 | GRN_LED_4 | 20  |
 | BLU_LED_4 | 21  |
-
-![Pinout](./media/pinout_pi_zero.png)
 
 Note, because I used a common ANODE LED I am running power from the 5V rail to the anode of the LED. If you were to use a common cathode, you would need to run the cathode to a ground pin on the Pi.
 
