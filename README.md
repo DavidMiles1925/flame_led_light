@@ -12,11 +12,15 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 
 **IMPORTANT:** The Rapsberry Pi comes with current limitations. Each GPIO pin should only carry a maximum of **16mA**, and the total GPIO should not carry a current greater than **50mA**. **USE THE CORRECT RESISTOR VALUES TO AVOID DAMAGE TO YOUR PI**
 
-**RGB LED Resistor Values:**
+#### RGB LED Resistor Values:
 
-Red: 1220 Ohms  
-Green: 690 Ohms
-Blue: 690 Ohms
+**Red: 1220 Ohms** ((5V-2V)\1220 = 0.0025mA)  
+**Green: 690 Ohms** ((5V-3.2V)\690 = 0.0026mA)  
+**Blue: 690 Ohms**((5V-3.2V)\690 = 0.0026mA)
+
+**Total Current Through GPIO: ~30mA**
+
+[Resistors](./media/breadboard_with_labels_thumb.jpg)
 
 ### Pin Out
 
@@ -34,3 +38,7 @@ Blue: 690 Ohms
 | RED_LED_4 | 12  |
 | GRN_LED_4 | 20  |
 | BLU_LED_4 | 21  |
+
+[Pinout](./media/pinout_pi_zero_thumb.png)
+
+[Wired](./media/pi_wired_up_thumb.jpg)
