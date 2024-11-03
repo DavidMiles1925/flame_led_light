@@ -62,9 +62,9 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 
 ![Pinout](./media/pinout_pi_zero.png)
 
-Note, because I used a common ANODE LED I am running power from the 5V rail to the anode of the LED. If you were to use a common cathode, you would need to run the cathode to a ground pin on the Pi.
+**_Note, because I used a common ANODE LED I am running power from the 5V rail to the anode of the LED. If you were to use a common cathode, you would need to run the cathode to a ground pin on the Pi._**
 
-![Wired](./media/pi_wired_up.jpg)
+![Wired](./media/pi_wired_up_new.jpg)
 
 ## Setting up the Raspberry Pi
 
@@ -72,9 +72,9 @@ Note, because I used a common ANODE LED I am running power from the 5V rail to t
 
 If you have never used a Raspberry Pi before, here are some resources I have created over the years that may be helpful for you.
 
-Link to:  
-[My GitHub - Setting up a Raspberry Pi](https://github.com/DavidMiles1925/pi_zero_setup?tab=readme-ov-file#setting-up-raspberry-pi-zero)
-[My YouTube - Setting up a Raspberry Pi](https://youtu.be/PFzUDpfFmyg)
+**[My GitHub - Setting up a Raspberry Pi]**(https://github.com/DavidMiles1925/pi_zero_setup?tab=readme-ov-file#setting-up-raspberry-pi-zero)
+
+**[My YouTube - Setting up a Raspberry Pi]**(https://youtu.be/PFzUDpfFmyg)
 
 ### Installing Git
 
@@ -97,6 +97,14 @@ git clone https://github.com/DavidMiles1925/flame_led_light.git
 ```
 
 **2. Set up `config.py`**
+
+You can edit `config.py` with the command:
+
+```bash
+sudo nano config.py
+```
+
+When you are finished press Ctrl+S followed by Ctrl+X to save and exit.
 
 Adjust `FLICKER TIME` to set the time (in seconds) between light changes. The default is 0.05 seconds.
 
