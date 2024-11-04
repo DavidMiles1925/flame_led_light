@@ -27,6 +27,8 @@ You will find that there are two main types of RGB LEDs out there. The type you 
 
 **I used a common ANODE LED for this project.** I will make some notes later on regarding what changes to make if you are using a common cathode LED.
 
+![Common Anode](./media/RGB_LED_common_anode.jpg)
+
 ## Circuit and Power
 
 I will use the 5V rail on the RPi, and divide it into one parallel circuit for each LED to connect to the anode. I will run the RPi pins to the ground pins of each LED individually.
