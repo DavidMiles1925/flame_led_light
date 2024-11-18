@@ -1,3 +1,6 @@
+# The unit creates the illusion of a flame by change one of the lights' colors at a given inerval.
+# FLICKER_INTERVAL represents that time in seconds.
+
 FLICKER_INTERVAL = 0.05
 
 # LED Batch 1

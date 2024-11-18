@@ -10,22 +10,22 @@ This is the code portion of a project I am doing for a 3D printing contest entry
 
 ### Supply List
 
-| Item                   | Qty | Link        |
-| ---------------------- | --- | ----------- |
-| 3D Print File          | 1   | Creality    |
-| Raspberry Pi           | 1   | Microcenter |
-| Solderless BreadBoard  | 1   | Amazon      |
-| Dupont M-F Cables      | 14  | Amazon      |
-| 220 Ohm Resistor       | 12  | Amazon      |
-| 470 Ohm Resistor       | 8   | Amazon      |
-| 1K Ohm Resistor        | 4   | Amazon      |
-| RGB LED (Common Anode) | 4   | Amazon      |
+| Item                   | Qty | Link                                                                                                      |
+| ---------------------- | --- | --------------------------------------------------------------------------------------------------------- |
+| 3D Print File          | 1   | [Creality](https://www.crealitycloud.com/user-profile/5069172030)                                         |
+| Raspberry Pi           | 1   | [Microcenter](https://www.microcenter.com/product/683270/raspberry-pi-raspberry-pi-zero-w-2-with-headers) |
+| Solderless BreadBoard  | 1   | [Amazon](https://www.amazon.com/gp/product/B07LFD4LT6/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)    |
+| Dupont M-F Cables      | 14  | [Amazon](https://www.amazon.com/gp/product/B01EV70C78/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)    |
+| 220 Ohm Resistor       | 12  | [Amazon](https://www.amazon.com/gp/product/B07ZX2CB6B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)    |
+| 470 Ohm Resistor       | 8   | [Amazon](https://www.amazon.com/gp/product/B07ZX2CB6B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)    |
+| 1K Ohm Resistor        | 4   | [Amazon](https://www.amazon.com/gp/product/B07ZX2CB6B/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)    |
+| RGB LED (Common Anode) | 4   | [Amazon](https://www.amazon.com/gp/product/B09BHSDDZ5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)    |
 
 ### Choosing an LED - Common Cathode vs Common Anode
 
 You will find that there are two main types of RGB LEDs out there. The type you buy will affect the way the device needs to be wired and coded.
 
-**I used a common ANODE LED for this project.** I will make some notes later on regarding what changes to make if you are using a common cathode LED.
+**I used a common ANODE LED for this project, but you can use either.** I will make some notes later on regarding what changes to make if you are using a common cathode LED.
 
 ![Common Anode](./media/RGB_LED_common_anode.jpg)
 
@@ -139,3 +139,5 @@ sudo python /home/YOUR_PI_NAME/flame_led_light &
 ## 3D Print
 
 Info to come
+
+[Creality](https://www.crealitycloud.com/user-profile/5069172030)
