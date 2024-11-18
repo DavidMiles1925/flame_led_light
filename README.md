@@ -37,11 +37,13 @@ I will use the 5V rail on the RPi, and divide it into one parallel circuit for e
 
 ### RGB LED Resistor Values:
 
-**Red: 1220 Ohms** ((5V-2V)\1220 = 0.0025mA)  
-**Green: 690 Ohms** ((5V-3.2V)\690 = 0.0026mA)  
-**Blue: 690 Ohms**((5V-3.2V)\690 = 0.0026mA)
+**Red: 1220 Ohms** ((5V-2V)\1220 = 2.5mA)
+**Green: 690 Ohms** ((5V-3.2V)\690 = 2.6mA)
+**Blue: 690 Ohms**((5V-3.2V)\690 = 2.6mA)
 
-**Total Current Through GPIO: ~30mA**
+**Total Current Through GPIO with 4 RGB LED units: ~30mA**
+
+**_WARNING: THIS SIMPLIFIED IMAGE IS JUST TO ILLUSTRATE THE VALUE OF RESISTORS NEEDED, NOT THE FINAL CONFIGURATION._**
 
 ![Resistors](./media/breadboard_with_labels.jpg)
 
@@ -138,6 +140,22 @@ sudo python /home/YOUR_PI_NAME/flame_led_light &
 
 ## 3D Print
 
-Info to come
+### Link to 3D Model Files:
+
+If you want to print the dumpster that goes along with this project, it can be found here:
 
 [Creality](https://www.crealitycloud.com/user-profile/5069172030)
+
+### Gallery
+
+![Dumpster Fire GIF](./media/Dumpster_Fire.gif)
+
+![Front](./media/front.jpg)
+
+![Brain and Print](./media/dumpster_and_brain.jpg)
+
+![Back](./media/back.jpg)
+
+![Inside](./media/wire_dumpster_fire.jpg)
+
+![Cord Hole](./media/cord_hole.jpg)
